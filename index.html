@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
     integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <title>WebStudio</title>
 </head>
 
@@ -57,8 +57,8 @@
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
-            </div>
-         </section>
+      </div>
+    </section>
     <!-- features -->
     <section class="section">
       <div class="container">
@@ -415,16 +415,70 @@
     </div>
   </footer>
   <!-- Modal -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+  <!-- <div class="backdrop is-hidden" data-modal> -->
+  <div class="backdrop" data-modal>
+  <div class="modal">
+    <div role="group" class="form">
+      <p class="form-text">
+        Оставьте свои данные, мы вам перезвоним
+      </p>
+      <label class="form-label">
+        <p class="form-descr">
+          Имя
+        </p>
+        <span class="form-span">
+          <svg class="icon-form name">
+            <use href="./images/symbol-defs.svg#icon-person"></use>
+          </svg>
+          <input class="form-input" type="text" name="user-name">
+        </span>
+      </label>
+      <label class="form-label">
+        <p class="form-descr">
+          Телефон
+        </p>
+        <span class="form-span">
+          <svg class="icon-form tel">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <input class="form-input" type="tel" name="user-tel">
+        </span>
+      </label>
+      <label class="form-label">
+        <p class="form-descr">
+          Почта
+        </p>
+       <span class="form-span">
+        <svg class="icon-form email">
+          <use href="./images/symbol-defs.svg#icon-email"></use>
+        </svg>
+        <input class="form-input" type="email" name="user-email">
+       </span>
+      </label>
+      <label class="form-label">
+        <p class="form-descr">
+          Комментарий
+        </p>
+        <textarea class="form-message" name="message" placeholder="Введите текст"></textarea>
+      </label>
+      
+      <p class="form-accept">
+        <input type="checkbox" class="checkbox" id="accept-policy">
+        <label for="accept-policy" class="form-accept-policy">
+          Соглашаюсь с рассылкой и принимаю <a href="" class="form-link-accept">Условия договора</a></label>
+      </p>
+      <button class="modal-button-submit">
+        Отправить
+      </button>
+
       <button type="button" class="hero-button-close" data-modal-close>
         <svg class="icon-close">
           <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
+    </div>
   </div>
-  </div>
-   <script src="./js/modal.js"></script>
-  </body>
+  <script src="./js/modal.js"></script>
+</body>
 
 </html>
