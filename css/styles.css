@@ -303,8 +303,11 @@ img {
   line-height: 1.16;
   letter-spacing: 0.1em;
   color: var(--grey-color);
-
   margin-bottom: 10px;
+}
+
+.form-label:last-child {
+  margin-bottom: 0;
 }
 
 .form-span {
@@ -386,17 +389,17 @@ img {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
   cursor: pointer;
+
+  line-height: 1.71;
+  color: var(--grey-color);
 }
 
 .checkbox-custom {
   margin-right: 8px;
-  line-height: 1.71;
-  /* transform: translateY(25%);
-
-  transition: transform(-25%); */
 
   background-color: transparent;
 
@@ -959,7 +962,7 @@ img {
   align-items: center;
   cursor: pointer;
   padding: 10px 28px 10px 29px;
-  
+
   background-color: var(--blue-color);
   font-weight: 700;
   font-size: 16px;
