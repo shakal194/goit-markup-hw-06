@@ -306,8 +306,8 @@ img {
   margin-bottom: 10px;
 }
 
-.form-label:last-child {
-  margin-bottom: 0;
+.form-label:nth-child(5) {
+  margin-bottom: 0px;
 }
 
 .form-span {
